@@ -12,8 +12,34 @@ public class Problem2 extends Robot
     }
     
     public void plantBeepers() {
+        while(nextToWall()) {
+           putBeeper();
+           move();
+          
+            
+       
         
     }
+}
+public void nextToWall() {
+    turnLeft();
+    if (frontIsClear()) {
+        move();
+        move();
+        turnLeft();
+    
    
 }
+else {
+    turnLeft();
+    turnLeft();
+    turnLeft();
+}
+}
+}
+
+
+
+
+
 
